@@ -22,6 +22,7 @@ class Game{
     } else if(!(this._board.hasSafeTiles)){
       console.log('Congratz');
     } else {
+      this._board.flipTile(rowIndex, columnIndex);
       console.log('Current board: ');
       this._board.print();
     }
